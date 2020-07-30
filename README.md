@@ -1,68 +1,208 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Korrila React Receipts
 
-## Available Scripts
+Korilla is Korean barbecue tacos truck that makes thousands of hungry customers happy every year.
 
-In the project directory, you can run:
+Their CEO is thinking of updating their short order tracking system using React.
 
-### `npm start`
+Build a prototype of this short order receipts tracker.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Part 1: Get Started
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Create a new folder for this project. Make an `index.html` and `app.js` ... follow the notes from class/lab to create an App component that renders
+ an `h1` with some text inside it
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Part 2: Sample Receipts
 
-### `npm run build`
+You'll be rendering some sample receipts:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```js
+const receipt1 =
+  {
+    person: 'Karolin',
+    order: {
+      main: 'Burrito',
+      protein: 'Organic Tofu',
+      rice: 'Purple Rice',
+      sauce: 'Green Crack',
+      toppings: [
+        'Baby Bok Choy', 'Cucumber Kimchi'
+      ],
+      drink: 'Korchata',
+      cost: 22
+    },
+    paid: false
+  }
+const receipt2 = {
+  person: 'Jerrica',
+  order: {
+    main: 'Rice Bowl',
+    protein: 'Ginger Soy Chix',
+    rice: 'Sticky Rice',
+    sauce: 'Korilla',
+    toppings: [
+      'Yuzu Pickled Sweet Pepper', 'Kale'
+    ],
+    drink: 'Korchata',
+    cost: 19
+  },
+  paid: false
+}
+const receipt3 = {
+  person: 'Matt',
+  order: {
+    main: 'Salad Bowl',
+    protein: 'Organic Tofu',
+    rice: 'none',
+    sauce: "K'lla",
+    toppings: [
+      'Blue Potato Salad', 'Pico De Gallo', 'Red Kimchi'
+    ],
+    drink: 'Sparkling Blood Orange Soda',
+    cost: 20
+  },
+  paid: true
+}
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Add the first receipt to the state of the app:
 
-### `npm run eject`
+```js
+class App extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = receipt1
+  }
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Make a Receipt component that renders the first receipt's
+  - person
+  - order
+      - main
+      - protein
+      - rice
+      - sauce
+      - drink
+      - cost
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Hungry for More: render the toppings
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+Add the next two receipts to state and make two more Receipt components so that you get a veiw like this (a little css provided for clarity, but not required)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![korilla receipts rendered Mark](https://i.imgur.com/27V4KW8.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- ![korilla receipts rendered Jerrica ](https://i.imgur.com/QMwgKOK.png) -->
 
-### Code Splitting
+<details><summary> Hint 1</summary>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+![the solution](https://i.imgur.com/OQ8sEtr.png)
 
-### Analyzing the Bundle Size
+</details>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+<details><summary> Hint 2 </summary>
 
-### Making a Progressive Web App
+![the solution](https://i.imgur.com/cQMrYAX.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+</details>
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Part 3: Conditionally Render the receipts if they have been paid or not
 
-### Deployment
+Right now, all the receipts are not paid ( `paid: false`)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Set up a ternary operator to display the receipt if it has not been paid.
 
-### `npm run build` fails to minify
+Then go into the receipt data and change the value to true and check that the receipt will not display
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+![Matt has settled his bill](https://i.imgur.com/90oM59b.png)
+
+
+To seee the `React` tab in the Dev Console, you have to download it as a [Chrome Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+
+<details><summary> Hint 3 </summary>
+
+![the solution](https://i.imgur.com/I3BcdqO.png)
+
+</details>
+
+
+## Part 4: Refactor for Dynamic Rendering
+
+3 receipts is pretty limiting. Let's put them in an array and then map over them for rendering.
+
+Update your code so it renders the same, but instead of hard coding 3 receipts, it maps over the array.
+
+```js
+const receipts = [
+  {
+    person: 'Karolin',
+    order: {
+      main: 'Burrito',
+      protein: 'Organic Tofu',
+      rice: 'Purple Rice',
+      sauce: 'Green Crack',
+      toppings: [
+        'Baby Bok Choy', 'Cucumber Kimchi'
+      ],
+      drink: 'Korchata',
+      cost: 22
+    },
+    paid: false
+  },
+  {
+    person: 'Mark',
+    order: {
+      main: 'Rice Bowl',
+      protein: 'Ginger Soy Chix',
+      rice: 'Sticky Rice',
+      sauce: 'Korilla',
+      toppings: [
+        'Yuzu Pickled Sweet Pepper', 'Kale'
+      ],
+      drink: 'Korchata',
+      cost: 19
+    },
+    paid: false
+  },
+  {
+    person: 'Matt',
+    order: {
+      main: 'Salad Bowl',
+      protein: 'Organic Tofu',
+      rice: 'none',
+      sauce: "K'lla",
+      toppings: [
+        'Blue Potato Salad', 'Pico De Gallo', 'Red Kimchi'
+      ],
+      drink: 'Sparkling Blood Orange Soda',
+      cost: 20
+    },
+    paid: true
+  }
+]
+```
+
+
+<details><summary> Hint 4 </summary>
+
+![the solution](https://i.imgur.com/A1ZQTzW.png)
+
+</details>
+
+## Hungry For More
+
+You'll have to read ahead in the notes...
+
+Add a click event on the receipt that changes the value of paid from false to true. Once clicked the receipt should immediately disappear from the browser view
+
+You'll have to research on your own...
+
+How do you style react components within react?
+
+[A nice place to start](https://codeburst.io/4-four-ways-to-style-react-components-ac6f323da822)
+
+But also, [why would one style components...rather than use a good old css file?](https://medium.com/@perezpriego7/css-evolution-from-css-sass-bem-css-modules-to-styled-components-d4c1da3a659b)
