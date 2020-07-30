@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/korilla-react-receipts/static/css/main.5f361e03.chunk.css",
+    "main.js": "/korilla-react-receipts/static/js/main.4d7cfe8d.chunk.js",
+    "main.js.map": "/korilla-react-receipts/static/js/main.4d7cfe8d.chunk.js.map",
+    "runtime-main.js": "/korilla-react-receipts/static/js/runtime-main.a0bdf3a3.js",
+    "runtime-main.js.map": "/korilla-react-receipts/static/js/runtime-main.a0bdf3a3.js.map",
+    "static/js/2.484949f5.chunk.js": "/korilla-react-receipts/static/js/2.484949f5.chunk.js",
+    "static/js/2.484949f5.chunk.js.map": "/korilla-react-receipts/static/js/2.484949f5.chunk.js.map",
+    "index.html": "/korilla-react-receipts/index.html",
+    "precache-manifest.41276014778de5f1545a2eadcb6775c1.js": "/korilla-react-receipts/precache-manifest.41276014778de5f1545a2eadcb6775c1.js",
+    "service-worker.js": "/korilla-react-receipts/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/korilla-react-receipts/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.484949f5.chunk.js.LICENSE.txt": "/korilla-react-receipts/static/js/2.484949f5.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/korilla-react-receipts/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a0bdf3a3.js",
+    "static/js/2.484949f5.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.4d7cfe8d.chunk.js"
+  ]
+}
