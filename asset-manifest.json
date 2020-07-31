@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/korilla-react-receipts/static/css/main.5f361e03.chunk.css",
-    "main.js": "/korilla-react-receipts/static/js/main.78bdd744.chunk.js",
-    "main.js.map": "/korilla-react-receipts/static/js/main.78bdd744.chunk.js.map",
+    "main.css": "/korilla-react-receipts/static/css/main.67fa4f55.chunk.css",
+    "main.js": "/korilla-react-receipts/static/js/main.5643468d.chunk.js",
+    "main.js.map": "/korilla-react-receipts/static/js/main.5643468d.chunk.js.map",
     "runtime-main.js": "/korilla-react-receipts/static/js/runtime-main.a0bdf3a3.js",
     "runtime-main.js.map": "/korilla-react-receipts/static/js/runtime-main.a0bdf3a3.js.map",
     "static/js/2.ee39aec8.chunk.js": "/korilla-react-receipts/static/js/2.ee39aec8.chunk.js",
     "static/js/2.ee39aec8.chunk.js.map": "/korilla-react-receipts/static/js/2.ee39aec8.chunk.js.map",
     "index.html": "/korilla-react-receipts/index.html",
-    "precache-manifest.901269574ba18293ebf36cb7feae0c3e.js": "/korilla-react-receipts/precache-manifest.901269574ba18293ebf36cb7feae0c3e.js",
+    "precache-manifest.96304866ba6afcd2892fe69e48088a9a.js": "/korilla-react-receipts/precache-manifest.96304866ba6afcd2892fe69e48088a9a.js",
     "service-worker.js": "/korilla-react-receipts/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/korilla-react-receipts/static/css/main.5f361e03.chunk.css.map",
+    "static/css/main.67fa4f55.chunk.css.map": "/korilla-react-receipts/static/css/main.67fa4f55.chunk.css.map",
     "static/js/2.ee39aec8.chunk.js.LICENSE.txt": "/korilla-react-receipts/static/js/2.ee39aec8.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/korilla-react-receipts/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a0bdf3a3.js",
     "static/js/2.ee39aec8.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.78bdd744.chunk.js"
+    "static/css/main.67fa4f55.chunk.css",
+    "static/js/main.5643468d.chunk.js"
   ]
 }
