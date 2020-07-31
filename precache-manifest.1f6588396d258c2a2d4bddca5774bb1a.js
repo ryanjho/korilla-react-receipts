@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5b30be9d9e3a6d10bd30c9b56e8b0108",
+    "revision": "5f7c525fb03d1ee8185e0481cc393505",
     "url": "/korilla-react-receipts/index.html"
   },
   {
-    "revision": "dc1017aea0a68ed3ac03",
+    "revision": "566b7f3eda705a23416b",
     "url": "/korilla-react-receipts/static/css/main.67fa4f55.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/korilla-react-receipts/static/js/2.ee39aec8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dc1017aea0a68ed3ac03",
-    "url": "/korilla-react-receipts/static/js/main.5643468d.chunk.js"
+    "revision": "566b7f3eda705a23416b",
+    "url": "/korilla-react-receipts/static/js/main.c62f0697.chunk.js"
   },
   {
     "revision": "0ed70095b6fa23b35216",
