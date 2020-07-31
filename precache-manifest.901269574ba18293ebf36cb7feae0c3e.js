@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2c539c9cd47086aa42a411984773536",
+    "revision": "ba3ec3ec7682e804cd526300226056c0",
     "url": "/korilla-react-receipts/index.html"
   },
   {
-    "revision": "f73265486119218198f8",
+    "revision": "0eac666407356d4d3cee",
     "url": "/korilla-react-receipts/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "a79137e27d312196f896",
-    "url": "/korilla-react-receipts/static/js/2.484949f5.chunk.js"
+    "revision": "2fb17477b37e8e9b45f3",
+    "url": "/korilla-react-receipts/static/js/2.ee39aec8.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/korilla-react-receipts/static/js/2.484949f5.chunk.js.LICENSE.txt"
+    "url": "/korilla-react-receipts/static/js/2.ee39aec8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f73265486119218198f8",
-    "url": "/korilla-react-receipts/static/js/main.4d7cfe8d.chunk.js"
+    "revision": "0eac666407356d4d3cee",
+    "url": "/korilla-react-receipts/static/js/main.78bdd744.chunk.js"
   },
   {
     "revision": "0ed70095b6fa23b35216",
